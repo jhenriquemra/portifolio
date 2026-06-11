@@ -1,36 +1,202 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Portfólio</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfólio — Tecnologia & Negócios</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <nav class="navbar">
-            <div class="logo">MeuPortfólio</div>
-            <ul class="nav-links">
-                <li><a href="index.html" class="active">Início</a></li>
-                <li><a href="sobre.html">Sobre Mim</a></li>
-                <li><a href="projeto.html">Projeto 1</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main class="hero-container">
-        <section class="hero-content">
-            <h1>Olá, bem-vindo ao meu portifólio!</h1>
-            <p>Desenvolvedor em aprendizagem, facinado por backend/dados orientado a finanças.</p>
-            <button id="btn-boas-vindas">Clique aqui</button>
-            <p id="mensagem-js" class="hidden"></p>
-        </section>
-    </main>
+  <header class="site-header">
+    <nav class="nav-container">
+      <a href="index.html" class="nav-logo">TN<span class="accent">.</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link active">início</a></li>
+        <li><a href="projeto.html" class="nav-link">projeto</a></li>
+        <li><a href="links.html" class="nav-link">estudo</a></li>
+        <li><a href="#contato" class="nav-link">contato</a></li>
+      </ul>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">&#9776;</button>
+    </nav>
+  </header>
 
-    <footer>
-        <p>&copy; 2026 - Desenvolvido por João Henrique. Disponível no GitHub.</p>
-    </footer>
+  <main>
 
-    <script src="js/script.js"></script>
+    <section class="hero">
+      <div class="hero-content">
+        <p class="hero-eyebrow">Ciência da Computação · Administração · 1º período</p>
+        <h1 class="hero-title">Seu Nome<span class="accent">.</span></h1>
+        <p class="hero-subtitle">Tecnologia que faz sentido para os negócios.</p>
+        <p class="hero-desc">
+          Estou no começo da jornada — cursando simultaneamente Ciência da Computação
+          e Administração. O que me move é entender como tecnologia e gestão se encontram
+          para criar produtos, resolver problemas reais e gerar valor de verdade.
+        </p>
+        <div class="hero-cta">
+          <a href="projeto.html" class="btn btn-primary">ver projeto</a>
+          <a href="#interesses" class="btn btn-ghost">interesses</a>
+        </div>
+      </div>
+      <div class="hero-chart" aria-hidden="true">
+        <canvas id="heroChart"></canvas>
+      </div>
+    </section>
+
+    <section class="stats-strip">
+      <div class="stat-item">
+        <span class="stat-number" data-target="2">0</span>
+        <span class="stat-label">graduações simultâneas</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number" data-target="1">0</span>
+        <span class="stat-label">período cursado</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number" data-target="3">0</span>
+        <span class="stat-label">linguagens em aprendizado</span>
+      </div>
+    </section>
+
+    <section class="section" id="interesses">
+      <div class="section-inner">
+        <h2 class="section-title">Interesses profissionais</h2>
+        <p class="section-sub">O que me atrai na interseção entre tecnologia e negócios.</p>
+
+        <div class="interests-grid">
+          <article class="interest-card">
+            <div class="interest-icon">&#128200;</div>
+            <h3>Produtos digitais</h3>
+            <p>Como ideias viram software. Me interessa o caminho entre um problema de negócio e a solução tecnológica: produto, UX, decisões de build vs. buy.</p>
+          </article>
+          <article class="interest-card">
+            <div class="interest-icon">&#128202;</div>
+            <h3>Dados para decisão</h3>
+            <p>Quero aprender a usar dados não só tecnicamente, mas estrategicamente. Como transformar números em argumentos que influenciam decisões de negócio.</p>
+          </article>
+          <article class="interest-card">
+            <div class="interest-icon">&#128640;</div>
+            <h3>Startups & inovação</h3>
+            <p>O ecossistema de startups me fascina: como empresas pequenas conseguem resolver grandes problemas usando tecnologia de forma inteligente e ágil.</p>
+          </article>
+          <article class="interest-card">
+            <div class="interest-icon">&#128373;</div>
+            <h3>Automação de processos</h3>
+            <p>Identificar tarefas repetitivas e pensar em como código pode eliminá-las, liberando pessoas para o que realmente importa — isso me parece muito valioso.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="section-inner">
+        <h2 class="section-title">O que estou aprendendo agora</h2>
+
+        <div class="skills-list">
+          <div class="skill-row">
+            <span class="skill-name">Lógica de programação / Python</span>
+            <div class="skill-bar-wrap">
+              <div class="skill-bar" data-width="40"></div>
+            </div>
+            <span class="skill-pct">iniciando</span>
+          </div>
+          <div class="skill-row">
+            <span class="skill-name">HTML &amp; CSS</span>
+            <div class="skill-bar-wrap">
+              <div class="skill-bar" data-width="50"></div>
+            </div>
+            <span class="skill-pct">básico</span>
+          </div>
+          <div class="skill-row">
+            <span class="skill-name">Fundamentos de Administração</span>
+            <div class="skill-bar-wrap">
+              <div class="skill-bar" data-width="45"></div>
+            </div>
+            <span class="skill-pct">básico</span>
+          </div>
+          <div class="skill-row">
+            <span class="skill-name">Planilhas &amp; análise básica de dados</span>
+            <div class="skill-bar-wrap">
+              <div class="skill-bar" data-width="55"></div>
+            </div>
+            <span class="skill-pct">básico</span>
+          </div>
+          <div class="skill-row">
+            <span class="skill-name">Leitura de mercado &amp; tendências tech</span>
+            <div class="skill-bar-wrap">
+              <div class="skill-bar" data-width="65"></div>
+            </div>
+            <span class="skill-pct">curioso</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="inspiracao">
+      <div class="section-inner">
+        <h2 class="section-title">O que me inspira</h2>
+        <div class="inspiration-grid">
+          <blockquote class="inspo-card">
+            <p>"Toda empresa de tecnologia bem-sucedida é, antes de tudo, uma empresa que resolve um problema humano."</p>
+            <cite>— adaptado de Paul Graham</cite>
+          </blockquote>
+          <div class="inspo-text">
+            <p>
+              Me inspira ver empresas que usam tecnologia não como fim, mas como meio —
+              para simplificar a vida das pessoas, criar acesso onde havia barreira,
+              ou tornar possível o que antes era impraticável.
+            </p>
+            <p>
+              Também me inspira estar nos dois lados ao mesmo tempo: entender o código
+              por dentro e o negócio por fora. A maioria das pessoas escolhe um.
+              Quero ser o profissional que sabe conversar com os dois mundos.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <section class="section section-alt" id="contato">
+    <div class="section-inner">
+      <h2 class="section-title">Entre em contato</h2>
+      <p class="section-sub">Fico feliz em conversar sobre projetos, ideias ou oportunidades.</p>
+      <div class="contact-grid">
+        <a href="mailto:seuemail@email.com" class="contact-card">
+          <div class="contact-icon">&#9993;</div>
+          <div class="contact-info">
+            <span class="contact-label">E-mail</span>
+            <span class="contact-value">jhenriquemra@outlook.com</span>
+          </div>
+        </a>
+        <a href="https://github.com/seuusuario" target="_blank" rel="noopener noreferrer" class="contact-card">
+          <div class="contact-icon">&#128025;</div>
+          <div class="contact-info">
+            <span class="contact-label">GitHub</span>
+            <span class="contact-value">github.com/jhenriquemra</span>
+          </div>
+        </a>
+        <a href="https://linkedin.com/in/seuusuario" target="_blank" rel="noopener noreferrer" class="contact-card">
+          <div class="contact-icon">&#128101;</div>
+          <div class="contact-info">
+            <span class="contact-label">LinkedIn</span>
+            <span class="contact-value">linkedin.com/in/jhenriquemra</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 João H. Azevedo &mdash; portfólio acadêmico</p>
+    <nav aria-label="Rodapé">
+      <a href="index.html">início</a>
+      <a href="projeto.html">projeto</a>
+      <a href="links.html">estudo</a>
+    </nav>
+  </footer>
+
+  <script src="main.js"></script>
 </body>
 </html>
