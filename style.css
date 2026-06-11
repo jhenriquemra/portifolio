@@ -678,6 +678,52 @@ ul { list-style: none; }
   text-overflow: ellipsis;
 }
 
+/* TIMELINE */
+.timeline { display: flex; flex-direction: column; gap: 0; position: relative; padding-left: 2rem; }
+.timeline::before { content: ''; position: absolute; left: 7px; top: 8px; bottom: 8px; width: 2px; background: var(--border); }
+.timeline-item { position: relative; padding-bottom: 2.5rem; }
+.timeline-item:last-child { padding-bottom: 0; }
+.timeline-marker { position: absolute; left: -1.85rem; top: 8px; width: 14px; height: 14px; border-radius: 50%; background: var(--accent); border: 3px solid var(--bg-base); box-shadow: 0 0 0 2px var(--accent); }
+.timeline-body { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius-md); padding: 1.4rem 1.5rem; transition: border-color var(--transition); }
+.timeline-body:hover { border-color: var(--border-accent); }
+.timeline-header { display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.75rem; }
+.timeline-role { font-size: 1rem; font-weight: 600; color: var(--text-primary); }
+.timeline-org { display: block; font-size: 0.85rem; color: var(--accent); margin-top: 0.15rem; }
+.timeline-period { font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-muted); white-space: nowrap; padding-top: 0.2rem; }
+.timeline-desc { font-size: 0.88rem; color: var(--text-secondary); margin-bottom: 1rem; line-height: 1.65; }
+.timeline-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+
+/* CARDS GRID */
+.cards-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.25rem; }
+
+/* CERT CARDS */
+.cert-card { display: flex; gap: 1rem; background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius-md); padding: 1.25rem; transition: border-color var(--transition), transform var(--transition); }
+.cert-card:hover { border-color: var(--border-accent); transform: translateY(-2px); }
+.cert-icon { font-size: 1.6rem; flex-shrink: 0; }
+.cert-body { display: flex; flex-direction: column; gap: 0.2rem; }
+.cert-issuer { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-muted); font-family: var(--font-mono); }
+.cert-name { font-size: 0.95rem; font-weight: 600; color: var(--text-primary); }
+.cert-detail { font-size: 0.82rem; color: var(--text-secondary); margin-top: 0.1rem; }
+.cert-year { font-family: var(--font-mono); font-size: 0.75rem; color: var(--accent); margin-top: 0.4rem; }
+
+/* AWARD CARDS */
+.award-card { display: flex; gap: 1rem; background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius-md); padding: 1.25rem; transition: border-color var(--transition), transform var(--transition); }
+.award-card:hover { border-color: var(--border-accent); transform: translateY(-2px); }
+.award-badge { display: flex; flex-direction: column; align-items: center; gap: 0.25rem; flex-shrink: 0; }
+.award-medal { font-size: 1.8rem; }
+.award-result { font-family: var(--font-mono); font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--accent); text-align: center; max-width: 60px; }
+.award-body { display: flex; flex-direction: column; gap: 0.2rem; }
+.award-name { font-size: 0.95rem; font-weight: 600; color: var(--text-primary); }
+.award-detail { font-size: 0.82rem; color: var(--text-secondary); }
+.award-year { font-family: var(--font-mono); font-size: 0.75rem; color: var(--accent); margin-top: 0.3rem; }
+
+/* CAMBRIDGE */
+.cambridge-card { display: flex; justify-content: space-between; align-items: center; gap: 2rem; background: var(--bg-card); border: 1px solid var(--border); border-left: 3px solid var(--accent); border-radius: var(--radius-md); padding: 2rem; flex-wrap: wrap; }
+.cambridge-left { display: flex; align-items: flex-start; gap: 1.25rem; }
+.cambridge-logo { font-size: 2.2rem; flex-shrink: 0; }
+.cambridge-cert { font-size: 1.1rem; font-weight: 600; color: var(--text-primary); margin: 0.25rem 0 0.5rem; }
+.cambridge-detail { font-size: 0.85rem; color: var(--text-secondary); }
+.cambridge-right { flex-shrink: 0; }
 
 .site-footer {
   border-top: 1px solid var(--border);
