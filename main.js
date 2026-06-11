@@ -108,6 +108,7 @@ if (heroCanvas) {
   });
   ctx.stroke();
 
+
   data.forEach((v, i) => {
     ctx.beginPath();
     ctx.arc(toX(i), toY(v), 3, 0, Math.PI * 2);

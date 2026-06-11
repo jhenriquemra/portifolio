@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Links de Estudo — Tecnologia & Negócios</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav-container">
+      <a href="index.html" class="nav-logo">TN<span class="accent">.</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">início</a></li>
+        <li><a href="projeto.html" class="nav-link">projeto</a></li>
+        <li><a href="links.html" class="nav-link active">estudo</a></li>
+        <li><a href="index.html#contato" class="nav-link">contato</a></li>
+      </ul>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">&#9776;</button>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="page-hero">
+      <div class="section-inner">
+        <p class="hero-eyebrow">Recursos</p>
+        <h1 class="page-title">Lista de links de estudo</h1>
+        <p class="page-lead">
+          Materiais que uso para aprender sobre programação, tecnologia e negócios.
+          Curadoria pessoal — foco em conteúdo acessível para quem está começando,
+          mas com profundidade para crescer junto.
+        </p>
+        <div class="filter-bar" role="group" aria-label="Filtrar por categoria">
+          <button class="filter-btn active" data-filter="all">todos</button>
+          <button class="filter-btn" data-filter="prog">programação</button>
+          <button class="filter-btn" data-filter="negocios">negócios</button>
+          <button class="filter-btn" data-filter="tech">tecnologia</button>
+          <button class="filter-btn" data-filter="carreira">carreira</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-inner">
+        <div class="links-grid" id="linksGrid">
+
+          <article class="link-card" data-cat="prog">
+            <div class="link-cat-badge prog">programação</div>
+            <h3><a href="https://cs50.harvard.edu/x/" target="_blank" rel="noopener noreferrer">CS50x — Harvard</a></h3>
+            <p>O melhor curso de introdução à ciência da computação que existe. Gratuito, rigoroso e acessível ao mesmo tempo. Ponto de partida para quem quer entender computação de verdade.</p>
+            <span class="link-source">Harvard / edX</span>
+          </article>
+
+          <article class="link-card" data-cat="prog">
+            <div class="link-cat-badge prog">programação</div>
+            <h3><a href="https://developer.mozilla.org/pt-BR/" target="_blank" rel="noopener noreferrer">MDN Web Docs</a></h3>
+            <p>A referência mais completa para HTML, CSS e JavaScript. Uso todo dia para entender como as coisas funcionam de verdade, não só como usá-las.</p>
+            <span class="link-source">Mozilla</span>
+          </article>
+
+          <article class="link-card" data-cat="negocios">
+            <div class="link-cat-badge negocios">negócios</div>
+            <h3><a href="https://www.ycombinator.com/library" target="_blank" rel="noopener noreferrer">YC Startup Library</a></h3>
+            <p>Biblioteca de artigos e vídeos da Y Combinator sobre como construir startups. Conteúdo prático sobre produto, crescimento e fundação de empresas de tecnologia.</p>
+            <span class="link-source">Y Combinator</span>
+          </article>
+
+          <article class="link-card" data-cat="negocios">
+            <div class="link-cat-badge negocios">negócios</div>
+            <h3><a href="https://hbr.org/topic/technology" target="_blank" rel="noopener noreferrer">HBR — Technology</a></h3>
+            <p>Harvard Business Review sobre tecnologia e gestão. Ideal para entender como líderes de negócio pensam sobre inovação digital, IA e transformação digital.</p>
+            <span class="link-source">Harvard Business Review</span>
+          </article>
+
+          <article class="link-card" data-cat="tech">
+            <div class="link-cat-badge tech">tecnologia</div>
+            <h3><a href="https://www.technologyreview.com" target="_blank" rel="noopener noreferrer">MIT Technology Review</a></h3>
+            <p>Jornalismo técnico e de negócios sobre as tecnologias que estão mudando o mundo. Ótimo para entender tendências com profundidade sem hype desnecessário.</p>
+            <span class="link-source">MIT</span>
+          </article>
+
+          <article class="link-card" data-cat="tech">
+            <div class="link-cat-badge tech">tecnologia</div>
+            <h3><a href="https://stratechery.com" target="_blank" rel="noopener noreferrer">Stratechery</a></h3>
+            <p>Análises profundas sobre estratégia de empresas de tecnologia. Ben Thompson é referência em entender por que empresas como Apple, Google e Amazon tomam as decisões que tomam.</p>
+            <span class="link-source">Ben Thompson</span>
+          </article>
+
+          <article class="link-card" data-cat="carreira">
+            <div class="link-cat-badge carreira">carreira</div>
+            <h3><a href="https://roadmap.sh" target="_blank" rel="noopener noreferrer">roadmap.sh</a></h3>
+            <p>Mapas visuais de carreira para diferentes áreas de tecnologia — frontend, backend, dados, DevOps. Ajuda a entender o que aprender e em que ordem, sem se perder.</p>
+            <span class="link-source">roadmap.sh</span>
+          </article>
+
+          <article class="link-card" data-cat="carreira">
+            <div class="link-cat-badge carreira">carreira</div>
+            <h3><a href="https://www.linkedin.com/learning/" target="_blank" rel="noopener noreferrer">LinkedIn Learning</a></h3>
+            <p>Cursos de habilidades técnicas e de negócios com certificado. Útil para complementar a graduação com conteúdo mais focado em mercado de trabalho.</p>
+            <span class="link-source">LinkedIn</span>
+          </article>
+
+          <article class="link-card" data-cat="prog">
+            <div class="link-cat-badge prog">programação</div>
+            <h3><a href="https://github.com/explore" target="_blank" rel="noopener noreferrer">GitHub Explore</a></h3>
+            <p>Descobrir projetos open source é uma das melhores formas de aprender a programar. Ver código de outros desenvolvedores ensina mais do que muitos tutoriais.</p>
+            <span class="link-source">GitHub</span>
+          </article>
+
+          <article class="link-card" data-cat="negocios">
+            <div class="link-cat-badge negocios">negócios</div>
+            <h3><a href="https://sifted.eu" target="_blank" rel="noopener noreferrer">Sifted — European Startups</a></h3>
+            <p>Cobertura do ecossistema de startups europeu, com perspectivas diferentes do Silicon Valley. Bom para entender como o empreendedorismo tech funciona globalmente.</p>
+            <span class="link-source">Sifted</span>
+          </article>
+
+        </div>
+
+        <p class="links-count" id="linksCount">Exibindo <strong>10</strong> recursos</p>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 João H. Azevedo &mdash; portfólio acadêmico</p>
+    <nav aria-label="Rodapé">
+      <a href="index.html">início</a>
+      <a href="projeto.html">projeto</a>
+      <a href="links.html">estudo</a>
+    </nav>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

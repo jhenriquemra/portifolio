@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projeto 1 — Dominó para Tetraplégicos</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav-container">
+      <a href="index.html" class="nav-logo">TN<span class="accent">.</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">início</a></li>
+        <li><a href="projeto.html" class="nav-link active">projeto</a></li>
+        <li><a href="links.html" class="nav-link">estudo</a></li>
+        <li><a href="index.html#contato" class="nav-link">contato</a></li>
+      </ul>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">&#9776;</button>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="page-hero">
+      <div class="section-inner">
+        <p class="hero-eyebrow">Projeto 1 · Hardware &amp; Acessibilidade</p>
+        <h1 class="page-title">Dominó para Tetraplégicos</h1>
+        <p class="page-lead">
+          Um sistema de controle por movimento de cabeça que permite a pessoas
+          com tetraplegia jogar dominó de forma autônoma, utilizando Arduino Nano
+          e sensor MPU-6050.
+        </p>
+        <div class="project-tags">
+          <span class="tag">Arduino Nano</span>
+          <span class="tag">MPU-6050</span>
+          <span class="tag">C/C++</span>
+          <span class="tag">Acessibilidade</span>
+          <span class="tag">Hardware</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- DESTAQUES -->
+    <section class="section section-alt">
+      <div class="section-inner">
+        <h2 class="section-title">Visão geral do projeto</h2>
+        <div class="metrics-grid">
+          <div class="metric-card">
+            <span class="metric-val">&#129303;</span>
+            <span class="metric-label">impacto social</span>
+          </div>
+          <div class="metric-card">
+            <span class="metric-val">&#9881;</span>
+            <span class="metric-label">hardware + software</span>
+          </div>
+          <div class="metric-card">
+            <span class="metric-val">&#127967;</span>
+            <span class="metric-label">autonomia</span>
+          </div>
+          <div class="metric-card">
+            <span class="metric-val">&#128301;</span>
+            <span class="metric-label">sensor IMU</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DESCRIÇÃO -->
+    <section class="section">
+      <div class="section-inner project-layout">
+
+        <div class="project-body">
+          <h2>Sobre o projeto</h2>
+          <p>
+            <!-- PREENCHA: descreva o problema que o projeto resolve, quem se beneficia e o contexto que motivou a ideia -->
+            [Descreva aqui o problema que motivou o projeto — por exemplo, a dificuldade de pessoas com tetraplegia em participar de atividades lúdicas de forma independente, e como surgiu a ideia de usar movimento de cabeça como interface de controle.]
+          </p>
+
+          <h3>Como funciona</h3>
+          <p>
+            <!-- PREENCHA: explique o funcionamento geral do sistema — como o MPU-6050 capta o movimento, o que o Arduino processa e como isso se traduz em ação no jogo -->
+            [Descreva o funcionamento: o sensor MPU-6050 capta a inclinação e aceleração da cabeça do usuário; o Arduino Nano processa esses dados e os traduz em comandos de seleção e posicionamento das peças de dominó.]
+          </p>
+
+          <h3>Componentes utilizados</h3>
+          <ol class="project-steps">
+            <li>
+              <strong>Arduino Nano</strong> — microcontrolador principal responsável por
+              ler os dados do sensor e executar a lógica de controle.
+            </li>
+            <li>
+              <strong>MPU-6050</strong> — sensor IMU (acelerômetro + giroscópio) que
+              detecta a orientação e movimento da cabeça em 6 eixos.
+            </li>
+            <li>
+              <!-- PREENCHA: adicione os outros componentes do seu projeto (display, botões, estrutura física, etc.) -->
+              <strong>[Componente 3]</strong> — [descreva o papel deste componente no sistema].
+            </li>
+            <li>
+              <!-- PREENCHA -->
+              <strong>[Componente 4]</strong> — [descreva o papel deste componente no sistema].
+            </li>
+          </ol>
+
+          <h3>Desafios</h3>
+          <p>
+            <!-- PREENCHA: quais foram as dificuldades técnicas ou de design que você encontrou? -->
+            [Descreva os principais desafios do projeto — calibração do sensor, filtragem de ruído dos dados do MPU-6050, definição de gestos que não causem fadiga ao usuário, montagem física, etc.]
+          </p>
+
+          <h3>Aprendizados</h3>
+          <p>
+            <!-- PREENCHA: o que você aprendeu desenvolvendo este projeto? -->
+            [Descreva o que o projeto te ensinou — tanto técnico (programação em C/C++, comunicação I2C, leitura de sensores) quanto humano (design centrado no usuário, empatia com pessoas com deficiência, importância de testar com os usuários reais).]
+          </p>
+        </div>
+
+        <aside class="project-sidebar">
+          <div class="sidebar-card">
+            <h4>Ficha técnica</h4>
+            <dl>
+              <dt>Categoria</dt>
+              <dd>Hardware / Acessibilidade</dd>
+              <dt>Microcontrolador</dt>
+              <dd>Arduino Nano</dd>
+              <dt>Sensor</dt>
+              <dd>MPU-6050 (IMU 6 eixos)</dd>
+              <dt>Linguagem</dt>
+              <dd>C / C++ (Arduino IDE)</dd>
+              <dt>Protocolo</dt>
+              <dd>I2C</dd>
+              <dt>Período</dt>
+              <dd><!-- PREENCHA: ex. 1º semestre 2025 -->[semestre/ano]</dd>
+            </dl>
+          </div>
+
+          <div class="sidebar-card">
+            <h4>Links do projeto</h4>
+            <ul class="sidebar-links">
+              <li><a href="#" class="btn-link">&#128196; Ver no GitHub</a></li>
+              <li><a href="#" class="btn-link">&#128250; Vídeo demonstração</a></li>
+              <li><a href="#" class="btn-link">&#128220; Relatório completo</a></li>
+            </ul>
+          </div>
+
+          <div class="sidebar-card">
+            <h4>Área de impacto</h4>
+            <ul class="checklist">
+              <li>&#9989; Acessibilidade</li>
+              <li>&#9989; Tecnologia assistiva</li>
+              <li>&#9989; Inclusão social</li>
+              <li>&#9989; IoT / Embarcados</li>
+            </ul>
+          </div>
+        </aside>
+
+      </div>
+    </section>
+
+    <!-- PIPELINE DO SISTEMA -->
+    <section class="section section-alt">
+      <div class="section-inner">
+        <h2 class="section-title">Fluxo do sistema</h2>
+        <div class="pipeline">
+          <div class="pipe-step">
+            <div class="pipe-icon">&#128080;</div>
+            <span>Movimento da cabeça</span>
+          </div>
+          <div class="pipe-arrow">&#8594;</div>
+          <div class="pipe-step">
+            <div class="pipe-icon">&#128301;</div>
+            <span>MPU-6050 captura dados</span>
+          </div>
+          <div class="pipe-arrow">&#8594;</div>
+          <div class="pipe-step">
+            <div class="pipe-icon">&#9881;</div>
+            <span>Arduino processa</span>
+          </div>
+          <div class="pipe-arrow">&#8594;</div>
+          <div class="pipe-step">
+            <div class="pipe-icon">&#128073;</div>
+            <span>Comando gerado</span>
+          </div>
+          <div class="pipe-arrow">&#8594;</div>
+          <div class="pipe-step">
+            <div class="pipe-icon">&#127993;</div>
+            <span>Peça posicionada</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2025 Seu Nome &mdash; portfólio acadêmico</p>
+    <nav aria-label="Rodapé">
+      <a href="index.html">início</a>
+      <a href="projeto.html">projeto</a>
+      <a href="links.html">estudo</a>
+    </nav>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
